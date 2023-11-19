@@ -7,12 +7,15 @@
     + `PUT` updates an existing resource
     - `DELETE` removes a resource
 ---
+
 # Getting Started
-#### Run this command in terminal
+
+### Run this command in terminal :
 ```ruby
 npm i express
 ```
-   __Code Start:__
+---
+### Code Start :
 ```js
 const express = require("express"); // require express 
 const app = express();
@@ -21,20 +24,20 @@ let port = 8080;
 app.listen(port);
 ```
 
-   __Home Page:__
+   ### Home Page:
 ```js
 // setting home page using ejs templates
 app.get("/", (req, res) => {
     res.render("home.ejs");
 });
 ```
-   __Index Page ( READ Operation ) :__
+### Index Page ( READ Operation ) :
 ```js
 app.get("/blogs", (req, res) => {
     res.render("index.ejs", { blogs });
 });
 ```
-   __New blog Page ( CREATE Operation ) :__
+### New blog Page ( CREATE Operation ) :
 ```js
 // New Blog Form
 app.get("/blogs/new", (req, res) => {
@@ -50,7 +53,7 @@ app.post("/blogs", (req, res) => {
     res.redirect("/blogs")
 });
 ```
-   __Show Details of Blog:Id ( READ by Id Operation ) :__
+### Show Details of Blog:Id ( READ by Id Operation ) :
 ```js
 // show route (Read)
 app.get("/blogs/:id", (req, res) => {
@@ -60,7 +63,7 @@ app.get("/blogs/:id", (req, res) => {
     res.render("show.ejs", { blog });
 });
 ```
- __Edit of Blog:Id ( UPDATE Operation ) :__
+ ### Edit of Blog:Id ( UPDATE Operation ) :
 ```js
 //patch edit (Update)
 app.patch("/blogs/:id", (req, res) => {
@@ -79,7 +82,7 @@ app.get("/blogs/:id/edit", (req, res) => {
     res.render("edit.ejs", { blog });
 });
 ```
-__Delete any Blog:Id ( DELETE Operation ) :__
+### Delete any Blog:Id ( DELETE Operation ) :
 ```js
 //delete route (Delete)
 app.delete("/blogs/:id", (req, res) => {
@@ -97,6 +100,12 @@ app.use(express.static("public")); // (Static files server middleware) setting d
 app.set("view engine", "ejs");  // setting view engine to ejs for ejs templates
 app.set("views", path.join(__dirname, "/views")); // application to specify the directory where the application's views (templates) are located
 ```
+***
+### RESTful APIs are widely used due to their simplicity, scalability, and the ability to work well with different client types and HTTP-based systems. They are commonly used in web services, mobile applications, and various other software systems for enabling communication between different components.
 
+### [LinkedIn](https://www.linkedin.com/in/saurabhbahadur) 
+### [Mail](mailto:singhsaurabhbahadur@gmail.com)
+### [Instagram](https://www.instagram.com/saurabhbahadur_)
+### [Discord](https://discord.gg/aQR27Bg7de)
 
 
