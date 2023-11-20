@@ -102,10 +102,10 @@ app.set("views", path.join(__dirname, "/views")); // application to specify the 
 ```
 ***
 ### RESTful APIs are widely used due to their simplicity, scalability, and the ability to work well with different client types and HTTP-based systems. They are commonly used in web services, mobile applications, and various other software systems for enabling communication between different components.
-
-### [LinkedIn](https://www.linkedin.com/in/saurabhbahadur) 
-### [Mail](mailto:singhsaurabhbahadur@gmail.com)
-### [Instagram](https://www.instagram.com/saurabhbahadur_)
-### [Discord](https://discord.gg/aQR27Bg7de)
+# Feel Free to connect
++ ### [LinkedIn](https://www.linkedin.com/in/saurabhbahadur) 
++ ### [Mail](mailto:singhsaurabhbahadur@gmail.com)
++ ### [Instagram](https://www.instagram.com/saurabhbahadur_)
++ ### [Discord](https://discord.gg/aQR27Bg7de)
 
 
