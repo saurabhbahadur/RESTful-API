@@ -31,6 +31,11 @@ app.get("/", (req, res) => {
     res.render("home.ejs");
 });
 ```
+### Enter this on your browser url 
+```
+http://localhost:8080/
+```
+
 ### Index Page ( READ Operation ) :
 ```js
 app.get("/blogs", (req, res) => {
@@ -108,4 +113,7 @@ app.set("views", path.join(__dirname, "/views")); // application to specify the 
 + ### [Instagram](https://www.instagram.com/saurabhbahadur_)
 + ### [Discord](https://discord.gg/aQR27Bg7de)
 
+# License
 
+`RESTful-API` is licensed under **`MIT license`**. View [license](https://github.com/saurabhbahadur/RESTful-API/blob/main/LICENSE).<br>
+Copyright (c) [**Saurabh Bahadur**](https://github.com/saurabhbahadur).
