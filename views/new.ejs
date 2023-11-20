@@ -14,6 +14,8 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+
+
 </head>
 
 <body>
@@ -21,15 +23,18 @@
     <div class="container">
         <h1>Write Your Blog</h1>
         <div class="blogs">
+            <a href="http://localhost:8080/blogs" style="margin:auto; "class="dbutton"><i
+                class="fa-solid fa-arrow-left-long"></i></a>
             <form action="/blogs" method="post">
+    
                 <p class="label">Enter Username:</p>
                 <input type="text" name="username" placeholder="enter username"> <br><br>
                 <p class="label">Write Your Thought:</p>
                 <textarea name="content" rows="10" cols="50"></textarea><br><br>
-                <div class="button">
-                    <button>Submit</button>
+                <div style="margin-right: 40rem; background: transparent; border: none; "class="button">
+                    <button style="font-size: 3rem; color: white;" ><i class="fa-solid fa-square-arrow-up-right"></i></button>
             </form><br>
-            <a href="http://localhost:8080/blogs" class="dbutton"> <i class="fa-solid fa-chevron-left"></i> Back </a>
+            
         </div>
     </div>
     </div>

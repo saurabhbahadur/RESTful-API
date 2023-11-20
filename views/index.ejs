@@ -18,29 +18,29 @@
 
 <body>
     <br><br>
-    <a class="home" href="http://localhost:8080"><i class="fa-solid fa-house"></i> Home</a><br><br>
+    <a class="home" href="http://localhost:8080"><i class="fa-solid fa-house"></i></a><br><br>
     <h1 style="margin: auto; width: 850px; padding: 1rem 1rem; ">All blogs</h1>
     <%for(blog of blogs){%>
         <div class="container">
             <div class="blogs">
-                <h2 class="user">@<%= blog.username %>
+                <h2 class="user">Hey <%= blog.username %> !
                 </h2>
                 <h3 class="content">
                     <%= blog.content %>
                 </h3>
                 <div class="button">
-                    <a href="http://localhost:8080/blogs/<%=blog.id%>" class="dbutton"> See in details <i
+                    <a href="http://localhost:8080/blogs/<%=blog.id%>" class="dbutton"> <i
                             class="fa-solid fa-circle-info"></i></a>
-                    <a href="http://localhost:8080/blogs/<%=blog.id%>/edit" class="dbutton"> Edit <i
+                    <a href="http://localhost:8080/blogs/<%=blog.id%>/edit" class="dbutton"> <i
                             class="fa-regular fa-pen-to-square"></i></a>
                     <form action="/blogs/<%=blog.id%>?_method=DELETE" method="post">
-                        <button>Delete <i class="fa-solid fa-trash"></i></button>
+                        <button class="del"> <i class="fa-solid fa-trash"></i></button>
                     </form>
                 </div>
             </div>
             <%}%>
                 <br>
-                <a href="http://localhost:8080/blogs/new" class="button-62" role="button"> Create new post <i class="fa-solid fa-plus"></i></a>
+                <a href="http://localhost:8080/blogs/new" class="button-62" role="button"> Create post <i class="fa-solid fa-plus"></i></a>
 
 
                 <div class="ico">
