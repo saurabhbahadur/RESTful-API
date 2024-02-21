@@ -1,5 +1,9 @@
-# RESTful-API
+<h1 align="center" > RESTful-API </h1> <p align="center"> (RestFul API using Express JS)</p>
+
 ### A RESTful API (Representational State Transfer API) is an architectural style for designing networked applications. It is based on the principles of REST, which stands for Representational State Transfer, and it utilizes HTTP protocols for communication.
+
+## [Demo](https://www.linkedin.com/posts/saurabhbahadur_connections-mernstack-mernstackdevelopment-activity-7132318224523665408--vES?utm_source=share&utm_medium=member_desktop)
+
 ## Use of HTTP Verbs: RESTful APIs use HTTP methods such as `GET` ,  `POST` , `PUT` , `DELETE` , etc., to perform different operations on resources:
 + Four Method are used for `CRUD` operation:
     + `GET`  requests retrieve data from a server
@@ -31,6 +35,11 @@ app.get("/", (req, res) => {
     res.render("home.ejs");
 });
 ```
+### Enter this on your browser url 
+```
+http://localhost:8080/
+```
+
 ### Index Page ( READ Operation ) :
 ```js
 app.get("/blogs", (req, res) => {
@@ -102,10 +111,24 @@ app.set("views", path.join(__dirname, "/views")); // application to specify the 
 ```
 ***
 ### RESTful APIs are widely used due to their simplicity, scalability, and the ability to work well with different client types and HTTP-based systems. They are commonly used in web services, mobile applications, and various other software systems for enabling communication between different components.
-# Feel Free to connect
-+ ### [LinkedIn](https://www.linkedin.com/in/saurabhbahadur) 
-+ ### [Mail](mailto:singhsaurabhbahadur@gmail.com)
-+ ### [Instagram](https://www.instagram.com/saurabhbahadur_)
-+ ### [Discord](https://discord.gg/aQR27Bg7de)
 
 
+
+
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://twitter.com/saurabhbahadur" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="saurabhbahadur" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/saurabhbahadur" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="saurabhbahadur" height="30" width="40" /></a>
+<a href="https://fb.com/singhsaurabhbahadur" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="singhsaurabhbahadur" height="30" width="40" /></a>
+<a href="https://instagram.com/saurabhbahadur_" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="saurabhbahadur_" height="30" width="40" /></a>
+<a href="https://www.youtube.com/c/mighty saur" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="mighty saur" height="30" width="40" /></a>
+<a href="https://www.hackerrank.com/saurabhbahadur" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="saurabhbahadur" height="30" width="40" /></a>
+<a href="https://discord.gg/aQR27Bg7de" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="aQR27Bg7de" height="30" width="40" /></a>
+</p>
+
+
+
+# License
+
+`RESTful-API` is licensed under **`MIT license`**. View [license](https://github.com/saurabhbahadur/RESTful-API/blob/main/LICENSE).<br>
+Copyright (c) [**Saurabh Bahadur**](https://github.com/saurabhbahadur).
