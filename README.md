@@ -113,6 +113,13 @@ app.set("views", path.join(__dirname, "/views")); // application to specify the 
 ### RESTful APIs are widely used due to their simplicity, scalability, and the ability to work well with different client types and HTTP-based systems. They are commonly used in web services, mobile applications, and various other software systems for enabling communication between different components.
 
 
+# License
+
+`RESTful-API` is licensed under **`MIT license`**. View [license](https://github.com/saurabhbahadur/RESTful-API/blob/main/LICENSE).<br>
+Copyright (c) [**Saurabh Bahadur**](https://github.com/saurabhbahadur).
+
+***
+
 
 
 <h3 align="center">Connect with me:</h3>
@@ -125,11 +132,3 @@ app.set("views", path.join(__dirname, "/views")); // application to specify the 
 <a href="https://www.hackerrank.com/saurabhbahadur" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="saurabhbahadur" height="30" width="40" /></a>
 <a href="https://discord.gg/aQR27Bg7de" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="aQR27Bg7de" height="30" width="40" /></a>
 </p>
-
-
-
-
-# License
-
-`RESTful-API` is licensed under **`MIT license`**. View [license](https://github.com/saurabhbahadur/RESTful-API/blob/main/LICENSE).<br>
-Copyright (c) [**Saurabh Bahadur**](https://github.com/saurabhbahadur).
