@@ -1,0 +1,310 @@
+body {
+    background: linear-gradient(89.7deg, rgb(0, 0, 0) -10.7%, rgb(53, 92, 125) 88.8%);
+    width: 900px;
+    margin: auto;
+    padding: 0;
+    font-family: 'DM Serif Display', serif;
+
+}
+
+.home {
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 25px;
+    margin: 1rem 1rem;
+    background-color: rgb(198, 220, 223);
+    color: grey;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    opacity: 0.5;
+}
+
+.home:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    opacity: 1;
+    transition: 1s;
+    box-shadow: 0 0 5px purple;
+}
+
+.home1{
+    padding: 1rem 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 1);
+}
+
+h1 {
+
+    text-shadow: 2px 2px 5px rgb(34, 0, 255);
+    text-transform: uppercase;
+    color: white;
+    background: rgba(128, 0, 128, 0.776);
+    letter-spacing: 2px;
+    padding: 1rem 1rem 1rem 1rem;
+    font-weight: 300;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.detail {
+    color: white;
+    text-decoration: underline;
+
+}
+
+.user {
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: wavy;
+    color: white;
+    /* box-shadow: 0 0 2px 0 ;  */
+    border-radius: 25px;
+    width: fit-content;
+    padding: 1rem 1.5rem;
+
+}
+
+.content {
+    width: auto;
+    padding: 1rem 1.5rem;
+    font-style: italic;
+    color: rgb(24, 20, 20);
+    background-color: rgba(255, 255, 255, 0.354);
+    font-family: Futura;
+    font-size: 1.6rem;
+    border-radius: 25px;
+}
+
+.container {
+    display: grid;
+    width: 900px;
+    margin: auto;
+    border-radius: 25px;
+
+}
+
+.blogs {
+    margin: 1rem;
+    padding: 20px;
+    border-radius: 25px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 1);
+}
+
+
+.button {
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: center;
+}
+
+button {
+    padding: 14px 25px;
+    font-size: 2rem;
+    margin: 1rem 2rem;
+    background: transparent;
+    border: none;
+    /* background-color: white; */
+    color: red;
+    opacity: 0.5;
+    border-radius: 25px;
+}
+
+
+.dbutton {
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 25px;
+    margin: 1rem 2rem;
+    /* background-color: rgb(198, 220, 223); */
+    color: white;
+    border-radius: 25px;
+    font-size: 2rem;
+    /* opacity: 0.5; */
+}
+
+.dbutton:hover {
+    cursor: pointer;
+    background-color: white;
+    color: rgb(49, 49, 225);
+    opacity: 1;
+    transition: 0.5s;
+    box-shadow: 0 0 15px purple;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+    transition: 2s;
+    opacity: 1;
+}
+
+
+/* CSS */
+.button-62 {
+    background: linear-gradient(to bottom right, #ef47ef, #b55aff);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    opacity: 1;
+}
+
+.button-62:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-62:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+input {
+    width: auto;
+    padding: 1rem 2rem;
+    text-align: center;
+    border-radius: 25px;
+    background: transparent;
+    border: 2px double white;
+    color: white;
+}
+
+textarea {
+    width: auto;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    background: transparent;
+    border: 2px double white;
+    background-color: rgba(255, 255, 255, 0.418);
+    color: black;
+    resize: none;
+    font-size: 1rem;
+}
+
+.label {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: white;
+    padding: 1rem 1rem;
+}
+
+
+.ico {
+    text-align: center;
+    margin: 1.5rem 0;
+    width: 100%;
+   
+}
+
+.ico a i {
+    font-size: 3rem;
+    padding: 0 1rem;
+    opacity: 0.5;
+}
+
+.ico a i:hover {
+    opacity: 1;
+}
+
+.ico a {
+    color: white;
+}
+
+.icoSys {
+    margin: auto;
+    padding: 1rem 2rem;
+}
+
+.copy {
+
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: white;
+    padding: 1rem 1rem;
+}
+
+.dataApi {
+    font-size: 1.2rem;
+    color: white;
+    text-align: justify;
+
+}
+
+.mainH {
+    background-color: rgba(255, 255, 255, 0.491);
+    padding: 1rem 1rem;
+    color: rgb(62, 19, 62);
+    border-radius: 20px;
+}
+
+.subH {
+    color: orange;
+    text-decoration: underline;
+
+}
+
+/*  Media Query for responsiveness */
+
+@media only screen and (max-width: 700px) {
+
+    .container {
+        display: grid;
+
+    }
+
+    .blogs {
+        grid-template-rows: auto;
+        width: 500px;
+    }
+
+    .user {
+
+        font-size: 1.5rem;
+        width: auto;
+
+    }
+
+
+    .content {
+        background: transparent;
+        font-size: 1.6rem;
+        border-radius: 25px;
+        text-align: center;
+    }
+
+
+
+
+
+
+    button {
+        padding: 0.8rem 1rem;
+    }
+
+
+
+    a {
+        padding: 14px 25px;
+        margin: auto;
+        width: fit-content;
+        font-size: 1rem;
+    }
+
+  
+}

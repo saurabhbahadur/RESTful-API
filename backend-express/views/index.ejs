@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <br><br>
+    <a class="home" href="http://localhost:8080"><i class="fa-solid fa-house"></i></a><br><br>
+    <h1 style="margin: auto; width: 850px; padding: 1rem 1rem; ">All blogs</h1>
+    <%for(blog of blogs){%>
+        <div class="container">
+            <div class="blogs">
+                <h2 class="user">Hey <%= blog.username %> !
+                </h2>
+                <h3 class="content">
+                    <%= blog.content %>
+                </h3>
+                <div class="button">
+                    <a href="http://localhost:8080/blogs/<%=blog.id%>" class="dbutton"> <i
+                            class="fa-solid fa-circle-info"></i></a>
+                    <a href="http://localhost:8080/blogs/<%=blog.id%>/edit" class="dbutton"> <i
+                            class="fa-regular fa-pen-to-square"></i></a>
+                    <form action="/blogs/<%=blog.id%>?_method=DELETE" method="post">
+                        <button class="del"> <i class="fa-solid fa-trash"></i></button>
+                    </form>
+                </div>
+            </div>
+            <%}%>
+                <br>
+                <a href="http://localhost:8080/blogs/new" class="button-62" role="button"> Create post <i class="fa-solid fa-plus"></i></a>
+
+
+                <div class="ico">
+                    <div class="icoSys">
+                        <a href="https://www.linkedin.com/in/saurabhbahadur/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/saurabhbahadur_/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/saurabhbahadur/RESTful-API"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-copyright copy"> Saurabh Bahadur </i>
+                    </div>
+                </div>
+
+
+                <br>
+</body>
+
+</html>

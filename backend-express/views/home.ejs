@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <br><br>
+    <div class="container home1">
+        <h1>Restful API</h1>
+
+        <div class="dataApi">
+            <p class="mainH">A RESTful API (Representational State Transfer API) is an architectural style for designing
+                networked applications. It is based on the principles of REST, which stands for Representational State
+                Transfer, and it utilizes HTTP protocols for communication.</p>
+            <p>Key principles of a RESTful API include:</p>
+            <ol type="1">
+                <li><b class="subH">Stateless Communication:</b> Each request from a client to the server must contain
+                    all the information necessary for the server to understand and fulfill the request. The server
+                    doesn't keep any client state between requests.</li>
+                <li><b class="subH">Use of HTTP Verbs:</b> RESTful APIs use HTTP methods such as GET, POST, PUT, DELETE,
+                    etc., to perform different operations on resources. For example:
+                    <ul type="disc">
+                        <li><b class="subH">GET</b> requests retrieve data from a server</li>
+                        <li><b class="subH">POST</b> sends data to a server to create a new resource</li>
+                        <li><b class="subH">PUT</b> updates an existing resource</li>
+                        <li><b class="subH">DELETE</b> removes a resource</li>
+                    </ul>
+                </li>
+                <li><b class="subH">Resource-Based URLs: </b> Resources are identified using URLs (Uniform Resource
+                    Locators), and these URLs should be structured in a hierarchical manner to represent different
+                    resources and their relationships. For example:
+                    <ul type="disc">
+                        <li>https://localhost:8080</li>
+                        <li>https://localhost:8080/blogs</li>
+                    </ul>
+                </li>
+                <li> <b class="subH"> Representation of Resources:</b> Resources are represented in different formats
+                    such as JSON (JavaScript Object Notation), XML (eXtensible Markup Language), or others, typically
+                    JSON being the most commonly used due to its simplicity and readability.</li>
+            </ol>
+            <p class="mainH">Creating a RESTful API involves designing endpoints that map to specific resources,
+                defining the HTTP methods and their functionalities for each endpoint, handling request and response
+                formats (usually JSON or XML), and ensuring proper error handling and status codes.</p>
+            <p class="mainH"> RESTful APIs are widely used due to their simplicity, scalability, and the ability to work
+                well with different client types and HTTP-based systems. They are commonly used in web services, mobile
+                applications, and various other software systems for enabling communication between different
+                components.</p>
+        </div>
+
+        <br>
+        <div class="button">
+            <a href="http://localhost:8080/blogs/"  class="dbutton"> All Posts </a>
+            <a href="http://localhost:8080/blogs/new" class="dbutton"> Create new post <i class="fa-solid fa-plus"></i></a>
+        </div>
+
+        <br>
+
+    </div>
+
+    <div class="ico">
+        <div class="icoSys">
+            <a href="https://www.linkedin.com/in/saurabhbahadur/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/saurabhbahadur_/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/saurabhbahadur/RESTful-API"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div>
+            <i class="fa-regular fa-copyright copy"> Saurabh Bahadur </i>
+        </div>
+    </div>
+</body>
+
+</html>
