@@ -8,6 +8,7 @@ import mighty.backend_springBoot.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,7 +21,7 @@ public class UserController {
     private UserService userService;
 
     @PostMapping("/register")
-    public ResponseEntity<UserResponse> register(@Valid RegisterUserRequest request){
+    public ResponseEntity<UserResponse> register(@Valid @RequestBody RegisterUserRequest request){
         UserResponse response = userService.registerUser(request);
         return ResponseEntity.ok(response);
     }

@@ -25,6 +25,9 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserResponse registerUser(RegisterUserRequest request) {
 
+        if (request.getPassword() == null || request.getPassword().isBlank()) {
+            throw new IllegalArgumentException("Password cannot be null or blank");
+        }
 
         Users user = new Users();
         user.setEmail(request.getEmail());
