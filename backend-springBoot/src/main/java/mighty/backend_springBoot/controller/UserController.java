@@ -33,7 +33,7 @@ public class UserController {
 
     @PostMapping("/login")
     public ResponseEntity<LoginUserResponse> login(@Valid @RequestBody LoginUserRequest loginUserRequest){
-        log.info("Login endpoint called of User Controller ");
+        log.info("Login endpoint called of User Controller " +loginUserRequest);
         return ResponseEntity.ok(userService.loginUser(loginUserRequest));
     }
 
