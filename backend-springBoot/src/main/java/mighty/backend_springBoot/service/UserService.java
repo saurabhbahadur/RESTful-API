@@ -1,9 +1,12 @@
 package mighty.backend_springBoot.service;
 
+import mighty.backend_springBoot.dto.requestDto.LoginUserRequest;
 import mighty.backend_springBoot.dto.requestDto.RegisterUserRequest;
-import mighty.backend_springBoot.dto.responseDto.UserResponse;
+import mighty.backend_springBoot.dto.responseDto.LoginUserResponse;
+import mighty.backend_springBoot.dto.responseDto.RegisterUserResponse;
 
 public interface UserService {
 
-    UserResponse registerUser(RegisterUserRequest request);
+    RegisterUserResponse registerUser(RegisterUserRequest request);
+    LoginUserResponse loginUser(LoginUserRequest loginUserRequest);
 }

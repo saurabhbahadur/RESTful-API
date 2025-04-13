@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Data
-public class UserResponse {
+public class RegisterUserResponse {
     private UUID id;
     private String email;
     private String username;
