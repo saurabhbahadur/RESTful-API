@@ -1,8 +1,8 @@
-const { createBlog } = require("../services/blogService");
+const { createBlog, deleteBlog, updateBlog } = require("../services/blogService");
 
 
 
-const create = async (req, res) => {
+const createBlogController = async (req, res) => {
 
     console.log("Create Blog controller ....");
 
@@ -18,4 +18,32 @@ const create = async (req, res) => {
     }
 };
 
-module.exports = { create };
+const updateBlogController = async (req, res) => {
+    console.log("Update Blog controller ....");
+
+    const blogId = req.params.id;
+    const { title, content } = req.body;
+
+    try {
+        const updatedBlog = await updateBlog(blogId, title, content);
+        res.status(200).send(updatedBlog);
+
+    } catch (error) {
+        res.status(500).send(error);
+    }
+
+};
+
+const deleteBlogController = async (req, res) => {
+    console.log("Delete Blog controller ....");
+    try {
+        const blogId = req.params.id;
+        const blog = await deleteBlog(blogId);
+        res.status(200).json(blog);
+
+    } catch (error) {
+        res.status(500).send('Internal server error');
+    }
+};
+
+module.exports = { createBlogController, updateBlogController, deleteBlogController };

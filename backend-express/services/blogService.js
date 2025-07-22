@@ -14,8 +14,35 @@ const createBlog = async (userId, title, content) => {
 
 };
 
+const updateBlog = async (blogId, title, content) => {
+
+    console.log("Update Blog Service Called");
+    console.log("BlogID received in service:", blogId);
+
+    if (!title || !content) { throw new Error("Blog not found"); }
+
+    const updatedBlog = await Blog.findByIdAndUpdate(blogId, { title, content }, { new: true, runValidators: true });
+
+    if (!updatedBlog) { throw new Error("Blog not found"); }
+
+    return updatedBlog;
 
 
 
+};
 
-module.exports = { createBlog };
+const deleteBlog = async (blogId) => {
+
+    console.log("Delete Blog Service Called");
+    console.log("BlogID received in service:", blogId);
+
+    const blog = await Blog.findById(blogId);
+
+    if (!blog) { throw new Error("Blog not found"); }
+
+    return await Blog.findByIdAndDelete(blogId);
+
+};
+
+
+module.exports = { createBlog, updateBlog, deleteBlog };
