@@ -5,59 +5,65 @@
 
 ### 📘 What is a RESTful API?
 
-A **RESTful API (Representational State Transfer API)** is an architectural style for building scalable and lightweight web services.  
-It uses standard **HTTP methods** to perform operations on resources.
+A **RESTful API** (Representational State Transfer) is an architecture style for designing scalable web services.  
+It performs operations on resources using standard **HTTP methods** like `GET`, `POST`, `PUT`, and `DELETE`.
 
 ---
 
-## 🔧 CRUD Operations with HTTP Verbs
+## 🔧 Supported API Operations
 
-RESTful APIs typically use the following HTTP methods:
-
-| Method  | Description                        |
-|---------|------------------------------------|
-| `GET`   | Retrieve data from the server      |
-| `POST`  | Send data to the server to create  |
-| `PUT`   | Update an existing resource        |
-| `DELETE`| Remove a resource from the server  |
+| Method   | Function                            |
+|----------|-------------------------------------|
+| `GET`    | Fetch existing data                 |
+| `POST`   | Create new resource                 |
+| `PUT`    | Update existing resource            |
+| `DELETE` | Remove existing resource            |
 
 ---
 
-## 💡 About This Project
+## 💡 Project Overview
 
-This repository is a **tech-comparison lab** to explore and understand how RESTful APIs work using:
+This is a **side-by-side comparison** of REST API implementations using:
 
-- ✅ **Java Spring Boot**
-- ✅ **Node.js with Express.js**
+- ✅ Java (Spring Boot)
+- ✅ JavaScript (Node.js + Express.js)
 
-I've implemented the same endpoints using both stacks so you can:
+Each stack includes:
 
-- Understand the syntax and structure differences
-- Compare ease of development and performance
-- Choose the best tech based on your project needs
+- 👤 User Controller  
+  - `POST /register` – Register new user  
+  - `POST /login` – Login with JWT
 
----
+- 📝 Blog Controller  
+  - `POST /create` – Create blog post  
+  - `PUT /edit/:id` – Edit blog (only if owner)  
+  - `DELETE /delete/:id` – Delete blog (only if owner)
 
-## 📁 Tech Stack
-
-| Stack           | Language | Framework      |
-|----------------|----------|----------------|
-| Backend (1)    | Java     | Spring Boot    |
-| Backend (2)    | JavaScript | Express.js  |
-| API Type       | REST     | HTTP Verbs     |
-| Testing Tool   | Postman  |                |
+All routes are secured with **JWT authentication** and ownership checks.
 
 ---
 
-## 🎯 Who is this for?
+## ⚙️ Tech Comparison
 
-- Developers exploring backend technologies
-- Students learning RESTful concepts
-- Anyone curious about Java vs JavaScript for backend development
+| Feature        | Spring Boot           | Express.js           |
+|----------------|------------------------|-----------------------|
+| Language       | Java                   | JavaScript (Node.js) |
+| Framework      | Spring Boot            | Express.js            |
+| Auth           | Spring Security + JWT  | Custom Middleware + JWT |
+| DB Integration | JPA (Hibernate)        | Mongoose (MongoDB)   |
+| Run Command    | `./mvnw spring-boot:run` | `nodemon server.js` |
 
 ---
 
-## 🤝 Connect with Me
+## 🎯 Ideal For
+
+- Developers comparing Java vs JS for APIs  
+- Students practicing RESTful backend design  
+- Anyone building secure, CRUD-based backend apps
+
+---
+
+## 🌐 Connect with Me
 
 <p align="center">
   <a href="https://twitter.com/saurabhbahadur"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" height="30" width="40" /></a>
@@ -71,5 +77,4 @@ I've implemented the same endpoints using both stacks so you can:
 
 ---
 
-## ⭐ Don't forget to leave a star if you find this helpful!
-
+## ⭐ Give it a Star if You Found This Useful!

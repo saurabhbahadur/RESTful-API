@@ -19,16 +19,6 @@ public class SecurityConfig {
     @Lazy
     private JwtFilter jwtFilter;
 
-//
-//    @Bean
-//    public AuthenticationManager authenticationManager(AuthenticationConfiguration configuration) throws Exception {
-//        return configuration.getAuthenticationManager();
-//    }
-//
-//    @Bean
-//    public UserDetailsService userDetailsService(){
-//        return new CustomUserDetailsService();
-//    }
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
@@ -36,9 +26,8 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(
                                 "/api/v1/users/register",
-                                "/api/v1/users/login"
+                                "/api/v1/users/login","api/v1/blogs/create"
                         ).permitAll()
-                        .requestMatchers("api/v1/blogs/create").hasRole("USER")
                         .anyRequest().authenticated()
                 )
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))

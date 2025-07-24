@@ -9,7 +9,6 @@ import mighty.backend_springBoot.models.Users;
 import mighty.backend_springBoot.respository.BlogRepository;
 import mighty.backend_springBoot.respository.UserRepository;
 import mighty.backend_springBoot.service.BlogService;
-import mighty.backend_springBoot.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,6 +21,7 @@ public class BlogServiceImpl implements BlogService {
 
     @Autowired
    private UserRepository userRepository;
+
 
     @Override
     public BlogResponse createBlog(BlogRequest blogRequest, String userEmail) {
@@ -38,6 +38,17 @@ public class BlogServiceImpl implements BlogService {
 
 
         return new BlogResponse(saved.getTitle(),saved.getMessage(),user.getUsername(),saved.getCreatedAt());
+    }
+
+    @Override
+    public BlogResponse editBlog(Long blogId, BlogRequest blogRequest) {
+        return null;
+    }
+
+    @Override
+    public void deleteBlog(Long blogId) {
 
     }
+
+
 }
